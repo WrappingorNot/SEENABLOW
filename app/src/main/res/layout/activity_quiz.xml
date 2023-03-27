@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="450dp"
+        android:layout_height="425dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/quiz_img" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="366dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_quiz2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="15sp"
+            android:text="다음 뜻이 지칭 하는 단어는?"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_quiz2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="366dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background_white"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.183">
+
+        <Button
+            android:id="@+id/btn_answer3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="18dp"
+            android:background="@drawable/backgound_btnblue"
+            android:elevation="20dp"
+            android:fontFamily="@font/nanumsqacb"
+            android:text="3"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_answer2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="18dp"
+            android:background="@drawable/backgound_btnblue"
+            android:elevation="20dp"
+            android:fontFamily="@font/nanumsqacb"
+            android:text="2"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_answer1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="18dp"
+            android:layout_marginBottom="372dp"
+            android:background="@drawable/backgound_btnblue"
+            android:elevation="20dp"
+            android:fontFamily="@font/nanumsqacb"
+            android:text="1"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </Button>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="325dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
